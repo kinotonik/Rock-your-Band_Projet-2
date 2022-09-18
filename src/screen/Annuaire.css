@@ -1,0 +1,90 @@
+.videoTest{
+    height: 100vh;
+    width: 100vw;
+}
+
+    .titleForm1 {
+        text-align: center;
+        text-align: center;
+    border-top: 1px solid;
+    margin-top: 4rem;
+    border-bottom: 1px solid;
+    margin-bottom: 6rem;
+    }
+
+    .noResultAff {
+        text-align: center;
+        padding-top: 6vh;
+        font-family: var(--font-family-2);
+        font-weight: bold;
+        font-size: 2rem;
+    }
+
+    .containerSolo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .containerGroupe {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-right: 15px;
+        margin-left: 15px;
+    }
+
+    .titleCard {
+    text-align: center;
+    text-align: center;
+    margin-top: 6rem;
+    font-size:xx-large;
+    border-top: 1px solid;
+    margin-bottom: 4rem;
+    width: 80%;
+    margin: auto;
+   
+ }
+
+    .elment-annuaire{
+        display: grid;
+    grid-template-columns: 2fr 1fr;
+    }
+
+    @media screen and (max-width: 768px) {
+        .elment-annuaire{
+            display: flex;
+            flex-direction: column-reverse;
+        
+        }
+            .containerSolo {
+              display:flex;
+              flex-direction: row;
+              flex-wrap: wrap;
+              gap: 20px;
+              justify-content: center;
+              margin-top: 10px;
+            }
+
+            .containerGroupe {
+                display:flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                gap: 20px;
+                justify-content: center;
+                margin-top: 10px;
+              }
+
+              .titleForm1 {
+                text-align: center;
+                text-align: center;
+            border-top: 1px solid;
+            margin-top: 4rem;
+            font-size: 14px;
+            }
+        
+
+        }
+    

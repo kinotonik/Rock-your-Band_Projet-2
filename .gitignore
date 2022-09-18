@@ -18,6 +18,14 @@
 .env.test.local
 .env.production.local
 
+
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+yarn.lock
+
+# Local Netlify folder
+.netlify
+
+# variable environnement
+.env

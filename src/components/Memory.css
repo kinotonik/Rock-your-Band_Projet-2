@@ -1,0 +1,85 @@
+.wrapper-memory {
+    max-width: 860px;
+    margin: 40px auto;
+}
+
+/* *****************btn************************* */
+.btn-container {
+    width: 50%;
+}
+.btn-apropos {
+    width: 100%;
+    border: none;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    --b: 0.3em;   /* the thickness of the line */
+    --c: #d64d13; /* the color */
+    
+    color: #0000;
+    padding-block: var(--b);
+    background: 
+      linear-gradient(var(--c) 50%,rgb(238, 229, 229) 0) 0% calc(100% - var(--_p,0%))/100% 200%,
+      linear-gradient(var(--c) 0 0) 0% var(--_p,0%)/var(--_p,0%) var(--b) no-repeat;
+    -webkit-background-clip: text,padding-box;
+            background-clip: text,padding-box;
+    transition: .3s var(--_s,0s) linear,background-size .3s calc(.3s - var(--_s,0s));
+  }
+  .btn-apropos:hover {
+    --_p: 100%;
+    --_s: .3s;
+  }
+/* *****************fin btn************************* */
+
+/* *****************memory card************************* */
+
+.card-grid {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    grid-gap: 20px;
+}
+
+/* front of card - the picture */
+.card-memo .front {
+    transform: rotateY(90deg);
+    transition: all ease-in 0.2s;
+    position: absolute;
+}
+
+.flipped .front {
+    transform: rotateY(0deg);
+    transition-delay: 0.2s;
+}
+
+/* back of card - the cover */
+.card-memo .back {
+    transition: all ease-in 0.2s;
+    transition-delay: 0.2s;
+}
+
+.flipped .back {
+    transform: rotateY(90deg);
+    transition-delay: 0s;
+}
+
+/* *****************fin memory card************************* */
+
+@media screen and (max-width:380px) {
+    .wrapper-memory {
+        max-width: 860px;
+        margin: 40px 0px 40px 16px;
+    }
+    .btn-apropos {
+        font-size: 1rem;
+    } 
+  }
+  @media screen and (min-width:381px) and (max-width:900px) {
+    .wrapper-memory {
+        max-width: 860px;
+        margin: 40px 0px 40px 40px;
+    }
+    .btn-apropos {
+        font-size: 1.3rem;
+    } 
+  }

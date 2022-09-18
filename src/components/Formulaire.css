@@ -1,0 +1,253 @@
+
+
+.contenerForm {
+    display: flex;
+    /* flex-direction: column;   */
+    justify-content: center;
+    /* background: linear-gradient(45deg, #95a5fc, #ffc8ef); */
+    /* border: 1px solid; */
+    margin-bottom: 5rem;
+    padding: 25px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    background: #607c87;
+    border-radius: 10px;
+}
+
+
+
+.contener-1 {
+    display: flex;
+justify-content: space-around;
+    align-items: flex-end;
+    /* width: 600px; */
+    margin: 30px;
+    width: 100%;
+}
+.labelFrom{
+     display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 37%;
+    color: white;
+    font-weight: bold;
+}
+.selectForm {
+    padding: 6px;
+    margin: 10px 0px;
+/* height: 35px; */
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+      border-bottom: solid 2px white;
+      
+      font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+      margin: 0em 0 1.875em 0;
+      padding: 0 0 0.875em 0;
+    text-transform: uppercase;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+      color: cornsilk;
+      font: inherit;
+      margin: 0;
+      text-transform: none;
+      background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png) no-repeat right;
+      outline: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+  
+}
+option:not(:checked) { 
+    background-color: black; 
+    color: white;
+    
+}
+
+.selectForm::-ms-expand {
+    display: none;
+  }
+.locForm{
+        display: flex;
+    flex-direction: column;
+    margin: 10px;
+    color: black;
+    width:380px;
+
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+/* .contButton {
+    height: 100%;
+    position: relative;
+    perspective: -1px;
+} */
+.buttonForm {
+    /* margin-bottom: 1rem;
+    padding: 10px 30px;
+    background-color: var(--gray-2);
+    border: solid black 1px;
+    font-weight: bold; */
+    border: none;
+    position: relative;
+    background: none;
+    padding: 30px 80px;
+    display: inline-block;
+    text-transform: uppercase;
+    /* background: #cc0099; */
+    color: #fff;
+    letter-spacing: 2px;
+    font-size: 1rem;
+    font-weight: 800;
+    transform-style: preserve-3d;
+    outline: none;
+    outline: 1px solid transparent;
+    transition: all 0.5s ease-out;
+    cursor: pointer;
+    width: 100%;
+}
+.buttonForm:after {
+    content: "sur rock your band";
+    position: absolute;
+    padding: 30px 80px;
+    z-index: -1;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    left: 0;
+    top: -100%;
+    /* background: #990073; */
+    transform-origin: 0% 100%;
+    transform: rotateX(90deg);
+    /* text-align: start; */
+}
+
+.buttonForm:hover {
+    transform: translateY(40px) rotateX(-90deg);
+}
+
+
+    /* box-shadow: 
+      7px 6px 28px 1px rgba(0, 0, 0, 0.24);
+    transform: translateY(4px); */
+    
+
+
+
+
+@media  screen and (max-width: 768px) {
+    .contener-1 {
+        /* width: 300px; */
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        align-items: center;
+    }
+   /* .locForm {
+        width: 200px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 90px; 
+    } */
+
+    .contenerForm {
+        display: flex;
+        
+        justify-content: center;
+       border-right: none;
+       border-left: none;
+
+
+    }
+    
+
+    .selectForm {
+        padding: 6px;
+        margin: 10px 0px;
+    /* height: 35px; */
+        outline: none;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        background: none;
+        border: none;
+          border-bottom: solid 2px white;
+          color: #474544;
+          font-size: 1.000em;
+        font-weight: 400;
+        letter-spacing: 1px;
+          margin: 0em 0 1.875em 0;
+          padding: 0 0 0.875em 0;
+        text-transform: uppercase;
+          width: 90%;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -o-box-sizing: border-box;
+          box-sizing: border-box;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          transition: all 0.3s;
+          color: cornsilk;
+          font: inherit;
+          margin: 0;
+          text-transform: none;
+          background: url(https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png) no-repeat right;
+          outline: none;
+          -moz-appearance: none;
+          -webkit-appearance: none;
+      
+    }
+
+    .labelFrom{
+        display: flex;
+       flex-direction: column;
+       margin: 10px;
+       width: 80vw;
+       color: white;
+       font-weight: bold;
+       font-size: 17px;
+       align-items: center;
+   }
+
+   
+    .buttonForm {
+        
+          margin-bottom: 1rem;
+    padding: 10px 30px;
+    background-color: var(--gray-2);
+    border: solid black 1px;
+    font-weight: bold;align-items: center;
+    margin-top: 1rem;
+    }
+
+    .buttonForm:after{
+        display: none;
+    }
+    .buttonForm:hover {
+       transform: none;
+    }
+    .buttonForm:active {
+        box-shadow: 
+          7px 6px 28px 1px rgba(0, 0, 0, 0.35);
+        transform: translateY(10px);
+        
+    }
+    
+}
